@@ -107,8 +107,14 @@ with open(f'/content/learnData/HepG2_10_dense.bed', 'r') as f:
         arr[3] = arr[3]+'_'+types[int(arr[3])-1]
         f_new.write('\t'.join(arr))
   ```
-
- 
+ ```
+! wget : скачивание файлов
+! bedtools bamtobed : перевод bam формат в bed
+! cat : вывод файла
+! java -mx5000M -jar ChromHMM.jar BinarizeBed : разбиение генома на условные интервалы
+! java -mx5000M -jar ChromHMM.jar LearnModel : присвоение каждому геномному интервалу определенный эпигенетический тип
+! zip : архивирование файлов
+ ```
  ## Таблица. Эпигетические типы
 
 | Эпигенетический тип |Встречаемость в гистоновых модификациях| Описание |
