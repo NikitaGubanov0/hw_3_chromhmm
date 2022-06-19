@@ -1,10 +1,11 @@
 # hse_hw3_chromhmm
-[Сolab](https://colab.research.google.com/drive/1R7uXkOoaBvqCCnr1lh-QlS1y5Xz816UN#scrollTo=k80uGrS5quq1)
+# [Сolab](https://colab.research.google.com/drive/1R7uXkOoaBvqCCnr1lh-QlS1y5Xz816UN#scrollTo=k80uGrS5quq1)
 # Часть 1
 
 Клеточная линия, рассматриваемая в Дз2 (IMR-90), не содержит ChIP-seq эксперименты в рассматриваемых гистоновых метках
 ![](./image/noIMR.png)
-Поэтому для этого дз будет рассматриваться HepG2.
+
+Из за этого, будем рассматривать в данном дз HepG2.
 
 ## Список гистоновых меток
 
@@ -25,9 +26,9 @@
 
 [Файл](./cellmarkfiletable.txt)
 
-## ChromHMM
+## Данные
 [Папка с выдачей](https://github.com/NikitaGubanov0/hw_3_chromhmm/tree/main/ChromHMM)
-Некоторые файлы .bed посчитались очень большими и их невозможно загрузить... 
+(в папке присутсвует не все данные, так как некоторые файлы были слишком большими)
 | |  |
 |------------------|--------|
 |   ![](./image/emissions_10.png)    |    ![](./image/HepG2_10_overlap.png) |
@@ -35,8 +36,7 @@
 | ![](./image/transitions_10.png)||
 
 
-![]()
-## Эпигетические типы
+### Таблицами с этигетическими типы и их свойствами находится в самом низе, так как были проблемы с форматированием
 
  
 
@@ -61,9 +61,11 @@
 ![](./image/9.png) 
 ### Repressed
 ![](./image/10.png) 
+
+
 #  Часть 2
   ![](./image/part2.png) 
-# Код
+# Список всех запущенных команд
   ### Создание файла cellmarkfiletable.txt
   ```
   import os
@@ -107,7 +109,7 @@ with open(f'/content/learnData/HepG2_10_dense.bed', 'r') as f:
   ```
 
  
- ## Эпигетические типы
+ ## Таблица. Эпигетические типы
 
 | Эпигенетический тип |Встречаемость в гистоновых модификациях| Описание |
 |----------|------|----------|
