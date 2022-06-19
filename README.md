@@ -1,5 +1,5 @@
 # hse_hw3_chromhmm
-[Ссылка на colab](https://colab.research.google.com/drive/15umUh2vXqvAk3fWwrGRBwJZNNDFFmy-f?usp=sharing)
+[Сolab](https://colab.research.google.com/drive/1R7uXkOoaBvqCCnr1lh-QlS1y5Xz816UN#scrollTo=k80uGrS5quq1)
 # Часть 1
 
 Клеточная линия, рассматриваемая в Дз2 (IMR-90), не содержит ChIP-seq эксперименты в рассматриваемых гистоновых метках
@@ -26,7 +26,7 @@
 [Файл](./cellmarkfiletable.txt)
 
 ## ChromHMM
-[Папка с выдачей](./ChromHMM/)
+[Папка с выдачей](https://github.com/NikitaGubanov0/hw_3_chromhmm/tree/main/ChromHMM)
 Некоторые файлы .bed посчитались очень большими и их невозможно загрузить... 
 | |  |
 |------------------|--------|
@@ -40,17 +40,26 @@
 
  
 
-## Фотографии
-
+## Визуализация с помощью USCC
+### Promoter
 ![](./image/1.png)
+### Enhancer
 ![](./image/2.png) 
+### Enhancer 
 ![](./image/3.png) 
+### Repressed
 ![](./image/4.png) 
+### Enhancer
 ![](./image/5.png) 
+### PHeterochromatin
 ![](./image/6.png) 
+### Transcribed
 ![](./image/7.png) 
+### Repressed
 ![](./image/8.png) 
+### Repressed
 ![](./image/9.png) 
+### Repressed
 ![](./image/10.png) 
 #  Часть 2
   ![](./image/part2.png) 
@@ -102,7 +111,7 @@ with open(f'/content/learnData/HepG2_10_dense.bed', 'r') as f:
 
 | Эпигенетический тип |Встречаемость в гистоновых модификациях| Описание |
 |----------|------|----------|
-|  Promoter  |  во всех, но чаще всего: <ul><li> H3K4me1 <li> H3K4me2 <li> H3K4me3 <li> H3K9ac <li> H3K27ac <li> H3K79me2  | <li> Данное состояние попадает на экзон <li> Показывает высокий сигнал <li> Чаще всего ассоциировано с <ul><li> RefSeqExon <li> RefSeqGene <li> RefSeqTES <li> RefSeqTSS2kb </li> </li>  В меньшей степени с: <li> CpGIslands |
+|  Promoter |  во всех, но чаще всего: <ul><li> H3K4me1 <li> H3K4me2 <li> H3K4me3 <li> H3K9ac <li> H3K27ac <li> H3K79me2  | <li> Данное состояние попадает на экзон <li> Показывает высокий сигнал <li> Чаще всего ассоциировано с <ul><li> RefSeqExon <li> RefSeqGene <li> RefSeqTES <li> RefSeqTSS2kb </li> </li>  В меньшей степени с: <li> CpGIslands |
 |  Enhancer |   почти не встречается, кроме: <li> H3K9ac  <li> H3K27ac |  li> Данное состояние частично попадает на экзон и интрон li> Чаще всего ассоциировано с <ul><li> CpGIslands <li> RefSeqExon <li> RefSeqTES <li> RefSeqTSS <li> RefSeqTSS2kb   |
 |  Enhancer |  <li> Данное состояние нe попало на ген или попала на интрон и экзон <li>  показыват высокий сигнал во всех, но чаще всего: <ul><li> H2AFZ <li> H3K4me1 <li> H3K4me2 <li> H3K4me3 <li> H3K9ac <li> H3K27ac <li> H3K79me2 |  Чаще всего ассоциировано с  <li> RefSeqTES <li> RefSeqTSS2kb   | 
 |  Repressed |  Встречается почти во всех, но чаще всего:  <li> H3K4me1  |  <li> Данное состояние нe попало на ген или попала на интрон и экзон <li> Показывает низкий сигнал <li> Чаще всего ассоциировано с  <ul><li> RefSeqTES <li> LaminB1lads   |
